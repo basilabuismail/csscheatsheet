@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>CSS Cheatsheet</h1>
+    <section class="css-integration">
+        <table>
+        <h2>Ways to Integrage CSS and HTML</h2>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+             <tbody>
+                <tr>
+                     <th scope="row">Write CSS in Seperate Files</th>
+                     <td>CSS code can be written in its own files to keep it separate from the HTML code. The extension for CSS files is .css. These can be linked to an HTML file using a &ltlink&gt tag in the &lthead&gt section.</td>
+                     <td class="example">&lthead&gt<br> &ltlink&gt href="style.css" type="text/css" rel="stylesheet"&gt &lt/head&gt</td>
+                </tr>
+                <tr>
+                    <th scope="row">Write CSS in HTML File</th>
+                    <td>CSS code can be written in an HTML file by enclosing the code in &ltstyle&gt tags. Code surrounded by &ltstyle&gt tags will be interpreted as CSS syntax.</td>
+                    <td class="example">&lthead&gt<br> &ltstyle&gt<br>h1 {color: blue;}<br>&lt/style&gt<br> &lthead&gt</td>
+                </tr>
+                <tr>
+                    <th scope="row">Inline Styles</th>
+                    <td>CSS styles can be directly added to HTML elements by using the style attribute in the element’s opening tag.
+                        Each style declaration is ended with a semicolon. Styles added in this manner are known as inline styles.</td>
+                    <td class="example">&lth2 style="text-align: center;"&gtCentered
+                        text&lt/h2&gt<br><br>
+                        &ltp style="color: blue; font-size:
+                        18px;"&gtBlue, 18-point text&lt/p&gt</td>
+                 </tr>
+             </tbody>
+         </table>
+    </section>
+    <section class="css-selectors">
+        <h2>CSS Selectors</h2>
+        <table>
+            <thead>
+                <tr>
+                  <th>Tag</th>
+                  <th>Name</th>
+                  <th>Description</th>
+                  <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tag">any type or tag name</td>
+                    <td>Type Selector</td>
+                    <td>CSS type selectors are used to match all elements of a given type or tag name.</td>
+                    <td class="example">p {<br>}<br>/* Selects all &ltp&gt tags*/</td>
+                    
+                </tr>
+                <tr>
+                    <td class="tag">#</td>
+                    <td>ID Selector</td>
+                    <td>The CSS ID selector matches elements based on the contents of their id attribute.</td>
+                    <td class="example">#job-title {font-weight: bold;}</td>
+                </tr>
+                <tr>
+                    <td class="tag">.</td>
+                    <td>Class Selector</td>
+                    <td>The CSS class selector matches elements based on the contents of their attribute.</td>
+                    <td class="example">.calendar-cell {color: #fff;}</td>
+                </tr>
+                <tr>
+                    <td class="tag">*</td>
+                    <td>Universal selector</td>
+                    <td>Selects all HTML elements</td>
+                    <td class="example">* {font-family: serif;}</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="css-declarations">
+        <h2>CSS Declarations</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">CSS Property</th>
+                    <th scope="col">Description</th>
+                    <th class="example">Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>font-size</strong></td>
+                    <td>The font-size CSS property is used to set text sizes</td>
+                    <td class="example">font-size: 30px;</td>
+                </tr>
+                <tr>
+                    <td><strong>!important</strong></td>
+                    <td>The CSS !important rule is used on declarations to override any other declarations for a property and ignore selector specficity.</td>
+                    <td class="example">#column-one {width: 200px !important;}</td>
+                </tr>
+                <tr>
+                    <td><strong>opacity</strong></td>
+                    <td>he opacity CSS property can be used to control the transparency of an element. The value of this property ranges from 0 (transparent) to 1 (opaque).</td>
+                    <td class="example">opacity: 0.5;</td>
+                </tr>
+                <tr>
+                    <td><strong>font-weight</strong></td>
+                    <td>The font-weight CSS property can be used to set the weight (boldness) of text. The provided value can be a keyword such as <strong>bold or normal</strong>.</td>
+                    <td class="example">font-weight: bold;</td>
+                </tr>
+                <tr>
+                    <td><strong>text-align</strong></td>
+                    <td>The text-align CSS property can be used to set the text alignment of inline contents. This property can be set to these values: <strong>left , right , or center</strong>.</td>
+                    <td class="example">text-alight: right;</td>
+                </tr>
+                <tr>
+                    <td><strong>z-index</strong></td>
+                    <td>The CSS z-index property specifies how far back or how far forward an element will appear on a web page when it overlaps other elements.</td>
+                    <td class="example">//`element1` will overlap `element2`<br>.element1 {position: absolute;z-index: 1;<br>.element2 {position: absolute;z-index: -1;}</td>
+                </tr>
+                <tr>
+                    <td><strong>position</strong></td>
+                    <td>Positioning in CSS provides designers and developers options for positioning HTML elements on a web page. The CSS can be set to <strong>static, relative, absolute or fixed</strong>. When the CSS position has a value of fixed, it is set/pinned to a specific spot on a page.</td>
+                    <td class="example">navbar {position: fixed;}</td>
+                </tr>
+                <tr>
+                    <td><strong>display</strong></td>
+                    <td>The CSS display property determines the type of render block for an element. The most common values for this property are <strong>block, inline, and inline-block</strong></td>
+                    <td class="example">.container {display: inline;}</td>
+                </tr>
+                <tr>
+                    <td><strong>float</strong></td>
+                    <td>The CSS float property determines how far left or how far right an element should float within its parent element. The value left floats an element to the left side of its container and the value right floats an element to the right side of its container. For the property float, the width of the container must be specified or the element will assume the full width of its containing element.</td>
+                    <td class="example">.container {float: left;}</td>
+                </tr>
+                <tr>
+                    <td><strong>clear</strong></td>
+                    <td>The CSS clear property specifies how an element should behave when it bumps into another element within the same containing element.The clear is usually used in combination with elements having the CSS float property. This determines on which sides floating elements are allowed to float</td>
+                    <td class="example">.element {clear: left;}</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
