@@ -10,6 +10,7 @@ table{
     border: 1px solid black;
     width: 60%;
     margin: 0 auto;
+    border-spacing: 0;
 }
 
 th {
@@ -32,6 +33,6 @@ td{
 .example{
     font-family: monospace, serif;
 }
-.css-integration, .css-selectors, .css-declarations{
+.heading{
 margin-top: 50px;
 }
